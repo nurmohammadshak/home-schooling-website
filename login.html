@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<title>Login SignUp</title>
+	<link rel="stylesheet" type="text/css" href="loginStyle.css">
+    <!-- It will redirect to the Home Page after submitting the form -->
+  <script>
+    $(document).ready(function(){
+      $("form").submit(function(){
+        alert("Great Job !");
+      });
+    });
+    </script>
+</head>
+<body>
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" id="log" onclick="login()" style="color: #fff;">Log In</button>
+           
+        </div>
+        <div class="social-icons">
+			<a href="https://www.facebook.com/aioeam?mibextid=ZbWKwL"><img src="images/icon/fb2.png"></a>
+            <a href="https://instagram.com/aioeam?igshid=YmMyMTA2M2Y="><img src="images/icon/insta2.png"></a>
+            <img src="images/icon/tt2.png">
+        </div>
+        
+        <!-- Login Form -->
+			<form id="login" class="input-group" action="" method="POST">
+				<div class="inp">
+					<img src="images/icon/user.png"><input type="text" id="email" class="input-field" placeholder="Username or Phone Number" style="width: 88%; border:none;" required="required" name="username">
+				</div>
+				<div class="inp">
+					<img src="images/icon/password.png"><input type="password" id="password" class="input-field" placeholder="Password" style="width: 88%; border: none;" required="required" name="password">
+				</div>
+				<input type="checkbox" class="check-box">Remember Password
+				<button type="submit" class="submit-btn" onclick="auth()">Log In</button>
+			</form>
+			<script>
+				function auth(){
+					var email=document.getElementById('email').value;
+					var password=document.getElementById('password').value;
+					if(email=="admin@gmail.com" && password=="admin123"){
+						window.location.assign("class.html");
+						alert("login successfully");
+					}
+					else{
+						alert("invalid information");
+						return;
+					}
+				}
+			</script>
+
+            
+           
+		</div>
+
+</body>
+</html>

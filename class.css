@@ -1,0 +1,54 @@
+.course {
+	display: grid;
+	justify-content: center;
+}
+
+.cbox {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    margin-top: 100px;
+   
+}
+.cbox .det {
+	height: 60px;
+	margin: 10px;
+	background: #fff;
+	cursor: pointer;
+	border-radius: 50px;
+}
+.cbox .det a{
+	justify-content: space-around;
+	width: 100%;
+	padding: 20px;
+	border-radius: 50px;
+	border: 1px solid #FA4B37;
+	font-size: 25px;
+	color: #272529;
+	font-family: cursive;
+	text-decoration: none;
+    margin-top: 40px;
+}
+
+.cbox .det a:hover{
+	background: linear-gradient(to right, #FA4B37, #DF2771);
+	color: white;
+}
+
+body h1{
+    color: darkblue;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("images/extra/istockphoto-1028032242-612x612.jpg");
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+body h1{
+    font-size: 60px;
+}
